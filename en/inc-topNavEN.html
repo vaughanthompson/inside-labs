@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // activeLinking
+            var thebodyclass = $('body').attr('class')
+            if ($('body').hasClass(thebodyclass)) {
+                $('body').find("."+thebodyclass).addClass('activeLink');
+            }
+        });
+    </script>
+
+    <!-- top nav EN -->
+    <div id="secNav">
+        <div class="langNav">
+            <nav>
+                <!-- 
+                <a onclick="switchLang('en');" class="activeLang">en</a>
+                <a onclick="switchLang('de');">de</a>
+                -->
+            </nav>
+        </div>
+        <nav>
+            <a href="/en/about-insidelabs" class="about">About Us</a>
+            <a href="/en/our-team" class="team">Our team</a>
+            <!--a href="/en/academy" class="academy">Labs Academy</a -->
+            <a href="/en/contact" class="contact">Enquiries</a>
+            <a href="/" class="home icon-home"></a>
+        </nav>
+    </div>
+
+    <div id="priNav-v2">
+        <nav>
+            <a href="/" class="logo-small">
+                <img src="/images/2020/logo-R.svg" alt="Inside Labs">
+                <h2>Engage with intelligence</h2>
+            </a>
+            <a href="/en/omni-platform" class="platform">
+                <h5>Omni:<br>Software Solution</h5>
+            </a>
+            <a href="/en/omni-app" class="app">
+                <h5>Omni:<br>The App</h5>
+            </a>
+            <a href="/en/omni-destination" class="destination">
+                <h5>Omni:<br>For Resorts</h5>
+            </a>
+            <a href="/en/client-stories" class="stories">
+                <h5>Client Success<br>Stories</h5>
+            </a>
+            <a href="/en/services" class="services">
+                <h5>Services</h5><br>
+            </a>
+        </nav>
+        <div class="cta center">
+            <div>
+                <a href="/en/contact" class="majorCTA">
+                   Readiness appraisal
+                </a>
+                <h6 class="small">Contact our Product Team</h6>
+            </div>
+        </div>
+    </div>
+            
+
+</html>
