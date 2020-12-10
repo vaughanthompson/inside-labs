@@ -6,7 +6,8 @@ $(document).ready(function() {
             .removeClass()
             .addClass('loading');
 
-        var sendgridjs_url = 'https://insidelabs-contact.herokuapp.com/send';
+        var sendgridjs_url = 'https://pmff37wm5g.execute-api.eu-central-1.amazonaws.com/prod/contact';
+        // var sendgridjs_url = 'https://insidelabs-contact.herokuapp.com/send';
         //var sendgridjs_url = 'http://insidelabs-contact.herokuapp.com/send';
         var sendgridjs_to = 'talkto@insidelabs.tech';
         var sendgridjs_subject = 'New contact request | insidelabs.tech';
@@ -17,24 +18,31 @@ $(document).ready(function() {
 
         var sendgridjs_html = buildHtml(name, companyName, emailAddress, message);
 
-        var email = {
+        var email = JSON.stringify({
             to: sendgridjs_to,
             subject: sendgridjs_subject,
             html: sendgridjs_html
-        };
-        $.post(sendgridjs_url, email, function(response) {
-            if (response.success) {
-                $('#inputContainer')
-                    .removeClass()
-                    .addClass('done');
-            } else {
-                $('#inputContainer')
-                    .removeClass()
-                    .addClass('error');
-            }
         });
 
-        return false;
+        $.ajax({
+            method: "POST",
+            url: sendgridjs_url, 
+            data: email, 
+            success: function(response) {
+                console.log('success', response)
+                if (response === true) {
+                    $('#inputContainer')
+                        .removeClass()
+                        .addClass('done');
+                } else {
+                    $('#inputContainer')
+                        .removeClass()
+                        .addClass('error');
+                }
+            }, 
+            contentType: "application/json; charset=UTF-8",
+            dataType: "json"
+        })
     });
 });
 
