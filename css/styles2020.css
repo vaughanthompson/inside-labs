@@ -1331,6 +1331,11 @@ ul.featureList li strong {
 #contact #inputContainer.done #errorText {
   display: none;
 }
+div.thirdparty-logo {
+  border: 1px solid #333;
+  background-color: rgba(0,0,0,0.05);
+  padding: 0.8vw !important;
+}
 a:link,
 a:visited {
   color: #333;
