@@ -17,6 +17,7 @@ body footer
         padding-top: padXS
         padding-bottom: padStd
 
+
 .picturefill-background
     overflow hidden
 
@@ -438,4 +439,54 @@ div.containMNav h6
     body.noscroll
         overflow: visible
         height: 100%
-   
+
+
+
+// featurette main body
+main.featurette b.highlight
+    background-color:brand2
+    color:white
+    padding-left: 0.2em
+    padding-right:0.2em
+main.featurette
+    background-position: center top
+    background-repeat: no-repeat
+    background-size: 100% auto
+    background-attachment: fixed
+    background-image: url(/images/2020/misc/omni-benefits/hero/xl.jpg)
+@media mtrigger
+    main.featurette
+        background-attachment: scroll
+main.featurette article
+    margin-top: 0
+    margin-bottom: marXXS
+main.featurette header
+    margin-bottom: marL 
+main.featurette article:last-child
+    border-bottom: none
+    margin-top: marL
+@media mtrigger
+    main.featurette div.picturefill-background div.content
+        background:none
+    main.featurette div.picturefill-background section > div
+        background-repeat: no-repeat
+        background-position: -5% 105%
+        background-size: auto 30%
+        min-height: 70vh
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        padding-right: 5vw !important
+        color: brand1
+@media ttrigger    
+    main.featurette div.picturefill-background section > div
+        background-repeat: no-repeat
+        background-position: -1vw 50%
+        background-size: auto 90%
+        min-height: 40vh
+        display: flex
+        flex-direction: column
+        justify-content: center
+        padding: padM padXL padM padXL*2
+    main.featurette article div.content section 
+        flex-basis: 60%
