@@ -1216,8 +1216,11 @@ div.infographic {
 }
 div.ig-whatisomni {
   margin-top: 0;
+}
+div.ig-whatisomni.end {
   margin-bottom: 5vw;
 }
+div.ig-whatisomni div.igHeader,
 div.ig-whatisomni div.igContent {
   display: -ms-flexbox;
   display: box;
@@ -1235,6 +1238,7 @@ div.ig-whatisomni div.igContent {
   flex-wrap: nowrap;
 }
 @media screen and (max-width: 750px) {
+  div.ig-whatisomni div.igHeader,
   div.ig-whatisomni div.igContent {
     -o-box-orient: vertical;
     flex-direction: column;
@@ -1281,6 +1285,9 @@ div.ig-whatisomni div.igItem:last-child {
   div.ig-whatisomni div.igItem hr {
     display: none;
   }
+}
+div.ig-whatisomni div.igHeader div.igItem {
+  padding-bottom: 0.8vw;
 }
 div.ig-whatisomni div.igItem > div {
   padding: 0.8vw;
