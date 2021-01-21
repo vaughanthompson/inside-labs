@@ -11,9 +11,9 @@
         $('div#masthead').load("inc-topNavDE.html");
         $('footer#siteWide').load("inc-footerDE.html");
     } else {
-        $('div.containMNav').load("/en/inc-mobNavEN.html");
-        $('div#masthead').load("/en/inc-topNavEN.html");
-        $('footer#siteWide').load("/en/inc-footerEN.html");
+        $('div.containMNav').load("/de/inc-mobNavDE.html");
+        $('div#masthead').load("/de/inc-topNavDE.html");
+        $('footer#siteWide').load("/de/inc-footerDE.html");
     }
 
   
