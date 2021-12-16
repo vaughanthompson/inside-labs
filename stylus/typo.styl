@@ -47,7 +47,7 @@ li a:hover,
     transition: 500ms
 .activeLink,
 nav a:hover
-    border-bottom-color: brand2 !important
+    border-bottom-color: brand2
 
 
 // nav typo
@@ -69,10 +69,13 @@ div#priNav h5
     letter-spacing: 0
     margin-bottom: 7px
 div#priNav-v2 h5
-    font-size: 0.95em
-    font-weight: 500
-    letter-spacing: 0
-    margin-bottom: 7px    
+    font-size: 1.05em
+    font-weight: 900
+    letter-spacing: -0.01em
+    margin-bottom: 7px
+    line-height: 1.2em 
+div#priNav-v2 h5 span
+    font-weight: 300
 div#priNav a#omniDrop h5
     display: flex
     justify-content: space-between    
@@ -202,3 +205,41 @@ body > footer h6
     h1, h2, h3, h4, h5, h6, p
         margin-bottom: 0.5em;
 
+
+
+
+//a.omni-overview h5
+//    color:red
+.omni-resort,
+a.omni-resort h5
+    color:resort
+.omni-attract,
+a.omni-attract h5
+    color:attract
+.omni-loyalty,
+a.omni-loyalty h5
+    color:loyalty
+.omni-transact,
+a.omni-transact h5
+    color:transact
+.omni-curate,
+a.omni-curate h5
+    color:curate
+a.omni-data,
+a.omni-data h5
+    color:data
+
+nav a:hover
+    border-bottom-color: brand2 !important
+nav a.omni-resort:hover
+    border-bottom-color: resort !important
+nav a.omni-attract:hover
+    border-bottom-color: attract !important
+nav a.omni-loyalty:hover
+    border-bottom-color: loyalty !important
+nav a.omni-transact:hover
+    border-bottom-color: transact !important
+nav a.omni-curate:hover
+    border-bottom-color: curate !important
+nav a.omni-data:hover
+    border-bottom-color: data !important
