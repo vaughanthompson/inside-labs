@@ -1,2 +1,0 @@
-# inside-labs
-web sandbox
