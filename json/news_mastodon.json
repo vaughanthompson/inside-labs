@@ -1,0 +1,25 @@
+﻿{
+  "posts": [
+    {
+      "handle": "@vaughan",
+      "handleURL": "https://insidelabs.social/@vaughan",
+      "post": "Working on a UI that doesn't need too much customization ...",
+      "postUrl": "https://insidelabs.social/@vaughan/1234",
+      "date": "01 Aug 18"
+    },
+    {
+      "handle": "@julian",
+      "handleURL": "https://insidelabs.social/@vaughan",
+      "post": "Looking for some inside labs rats to come and help us ...",
+      "postUrl": "https://insidelabs.social/@vaughan/1234",
+      "date": "14 Aug 18"
+    },
+    {
+      "handle": "@michael",
+      "handleURL": "https://insidelabs.social/@vaughan",
+      "post": "Creating review policy for internal testing.",
+      "postUrl": "https://insidelabs.social/@vaughan/1234",
+      "date": "18 Aug 18"
+    }
+  ]
+}
