@@ -256,7 +256,7 @@ div.content.cE {
   text-align: left;
 }
 .tC {
-  text-align: left;
+  text-align: center;
 }
 .tR {
   text-align: left;
@@ -405,6 +405,9 @@ div.content.cE {
 @media screen and (min-width: 1100px) {
   div.content > section {
     flex-basis: 50%;
+  }
+  div.content > section.large {
+    flex-basis: 80%;
   }
   article.grid.allCols div.content {
     display: -ms-flexbox;
@@ -1332,12 +1335,12 @@ div.ig-whatisomni div.igItem.yellow h5 {
   .greyToColor.onOff .stateInactive {
     background-color: rgba(0,0,0,0.5) !important;
     filter: grayscale(100%);
-    transition: 1s;
+    transition: 1.5s;
   }
   .greyToColor.onOff .stateActive {
-    background-color: rgba(0,0,0,0.1) !important;
+    background-color: rgba(0,0,0,0.01) !important;
     filter: grayscale(0%);
-    transition: 2.5s;
+    transition: 1s;
   }
 }
 span.storeLinks {

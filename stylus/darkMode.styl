@@ -1,19 +1,12 @@
 /*!
-* generated using stylus - don't alter
+* darkmode css
 */
 
 // libs and default 3rd party
 @import 'nib'
-// setup
-@import '../fonts/manrope/manropeCustom.css'
 
+// defaults
 @require 'defaults.styl'
-// block, nav etc
-@require 'layout.styl'
-// custom elements, icons
-@require 'elements.styl'
-// typography, links
-@require 'typo.styl'
 
 
 
@@ -67,24 +60,186 @@
     background: linear-gradient(to right, brand2, blackAlp50)
 .gradient2
     background-blend-mode: multiply
-    background: linear-gradient(to right, black ,blackAlp50, blackAlp10)    
+    background: linear-gradient(to bottom, blackAlp10 ,blackAlp10, black)    
 .gradient3
     background-blend-mode: multiply
     background: linear-gradient(to right, whiteAlp75, whiteAlp75, whiteAlp50, whiteAlp10)
+.gradient4
+    background-blend-mode: multiply
+    background-image: linear-gradient(to right, rgba(0,255,255,1.0), rgba(136,0,255,1.0))
 @media mtrigger
     .gradient3
         background-blend-mode: multiply
+        background-size: 100%
         background: linear-gradient(to bottom right, white, whiteAlp90, whiteAlp90, whiteAlp10)
 .blur
     filter:blur(10px)
+.blurSmall
+    filter:blur(1px)
 
 
 
-// last in the cascade - highest prio
-.m
-    @media screen and (min-width: mBreakPoint)
-        display: $hideItAll
-.d
-    @media screen and (max-width: mBreakPoint)
-        display: $hideItAll
+.dmm-clr1-pri
+    color: rgba(0,255,255,1.0)
+.dmm-clr2-pri
+    color: rgba(0,143,143,1.0)
+.dmm-clr3-pri
+    color: rgba(0,110,110,1.0)
+.dmm-clr4-pri
+    color: rgba(0,87,87,1.0)
+.dmm-clr5-pri
+    color: rgba(0,64,64,1.0)
+.dmm-bg1-pri
+    background-color: rgba(0,255,255,1.0)
+.dmm-bg2-pri
+    background-color: rgba(0,143,143,1.0)
+.dmm-bg3-pri
+    background-color: rgba(0,110,110,1.0)
+.dmm-bg4-pri
+    background-color: rgba(0,87,87,1.0)
+.dmm-bg5-pri
+    background-color: rgba(0,64,64,1.0)
 
+.dmm-clr-mid
+    color: rgba(70,124,255,1.0)
+.dmm-bg-mid
+    background-color: rgba(70,124,255,1.0)
+
+
+.dmm-clr1-sec
+    color: rgba(136,0,255,1.0)
+.dmm-clr2-sec
+    color: rgba(76,0,143,1.0)
+.dmm-clr3-sec
+    color: rgba(59,0,110,1.0)
+.dmm-clr4-sec
+    color: rgba(46,0,87,1.0)
+.dmm-clr5-sec
+    color: rgba(34,0,64,1.0)
+.dmm-bg1-sec
+    background-color: rgba(136,0,255,1.0)
+.dmm-bg2-sec
+    background-color: rgba(76,0,143,1.0)
+.dmm-bg3-sec
+    background-color: rgba(59,0,110,1.0)
+.dmm-bg4-sec
+    background-color: rgba(46,0,87,1.0)
+.dmm-bg5-sec
+    background-color: rgba(34,0,64,1.0)
+
+div.pricingTable table
+    width:100%
+div.pricingTable th
+div.pricingTable td
+    padding:1vw
+div.pricingTable th
+    text-align: left
+    line-height: 100%
+div.pricingTable td
+    text-align: center
+    line-height: 100%
+div.pricingTable tr td
+    width:20%
+div.pricingTable tr th:first-child,
+div.pricingTable tr td:first-child
+    text-align: left
+    background-color: rgba(0,64,64,0.3)
+div.pricingTable tr th:nth-child(2),
+div.pricingTable tr td:nth-child(2)
+    background-color: rgba(0,64,64,0.5)
+div.pricingTable tr th:nth-child(3),
+div.pricingTable tr td:nth-child(3)
+    background-color: rgba(0,64,64,0.7)
+div.pricingTable tr th:nth-child(4),
+div.pricingTable tr td:nth-child(4)
+    background-color: rgba(0,64,64,0.9)
+div.pricingTable tr.borderTop td
+    border-top: 1px solid rgba(100,100,100,1.0)
+div.pricingTable .icon
+    margin:0px auto
+    background: none
+    font-size:1.5em
+    color: rgba(0,255,255,1.0)
+    padding:5px
+
+.gradientText
+    line-height: 105%
+    padding-bottom: 10px 
+    background-clip: text
+    text-fill-color: transparent
+    -webkit-text-fill-color: transparent
+
+
+body
+    background-image: url(/images/dmm/contourLines.svg)
+    background-size: cover
+    background-attachment: fixed
+    background-color: black
+
+article
+    background: none
+
+body, main 
+    color: white
+@media screen and (max-width: 750px)
+    .fullH, .largeH, .halfH
+        height:auto
+     .owl-theme .owl-nav
+        display: none
+@media screen and (min-width: 750px)
+    main
+        padding: 0
+    article div.content
+        padding-left: 10vw
+        padding-right: 10vw
+        width:80vw
+    .fullH
+        height:100vh
+
+main a:link,main a:visited
+    color: white
+
+footer#siteWide
+    background: white
+    color: black
+div.slider
+    background: none
+
+div.slider h3
+    font-size:1.9em
+.tC img
+    margin: 0 auto 2em auto
+.smallBrandLogo 
+    width:130px
+p
+    font-size: 1.2em
+td
+    font-size: 1em
+    line-height: 1.2em !important
+
+.iconheader i
+    margin: 0px auto
+    font-size: 4em
+    padding: 0.7em
+    text-align: center
+    background-color: #222
+
+.inpage-logo-1
+    width:100px
+
+.inpage-logo-2
+    width:130px
+
+
+a.ctaButton 
+    text-decoration: none
+    font-size: 1.1em
+    font-weight:300
+    border-radius: 2px
+    border:1px solid #fff
+    padding:12px 15px !important
+    margin-top: 1em
+
+a.ctaButton:hover
+    color: rgba(0,255,255,1.0) !important
+    border-color: rgba(0,255,255,1.0)
