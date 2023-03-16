@@ -1811,3 +1811,18 @@ div.picturefill-background.largeLink div.content > section a {
   width: 100%  !important;
   height:100%  !important;
 }
+
+
+
+
+/* css hack ios button styling */
+input[type=submit] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: white !important;
+  border:1px solid white;
+  border-radius: 0;
+  color: #000;
+  font-weight: 400;
+  padding: 15px 30px !important;
+}
