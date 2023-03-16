@@ -424,7 +424,7 @@ a.ctaButton:hover {
     -ms-flex-preferred-size: 80%;
         flex-basis: 80%;
   }
-  article.imageContent section > div.removeMobile {
+  div.removeMobile {
     display: none;
   }
   .tC img {
@@ -443,6 +443,10 @@ a.ctaButton:hover {
   }
   header.inset {
     margin-top: 3em;
+  }
+  article.laptopImage div.content {
+    min-height: 50vh;
+    text-align: center;
   }
 }
 div.enclose {
