@@ -244,8 +244,9 @@ div.pricingTable .icon {
 .gradientText {
   line-height: 105%;
   padding-bottom: 10px;
+  background-clip: text;  
   -webkit-background-clip: text;
-  text-fill-color: transparent;
+  /*text-fill-color: transparent;*/
   -webkit-text-fill-color: transparent;
 }
 body {
@@ -284,8 +285,17 @@ main {
     padding-right: 10vw;
     width: 80vw;
   }
+  .halfH {
+    height: auto;
+    min-height: 50vh;
+  }
   .fullH {
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
+  }
+  .largeH {
+    height: auto;
+    min-height: 70vh;
   }
 }
 main a:link,
@@ -472,4 +482,20 @@ div.enclose h4 span {
 }
 div.enclose ul {
   margin-bottom: 0;
+}
+
+
+
+div.langSwitch {
+  padding: 5px;
+  position: absolute;
+  right: 2vw;
+  top:1vw;
+  z-index: 1000;
+}
+div.langSwitch a.activeLang {
+  color: #0ff !important;
+}
+div.langSwitch a:hover {
+  cursor:pointer;
 }
